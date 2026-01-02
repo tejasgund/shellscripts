@@ -9,18 +9,18 @@ START_TIME=$(date +%s)
 
 # MYSQL CREDENTIALS
 MYSQL_USER="root"
-MYSQL_PASSWORD="5N3N3nl!gh5a"
+MYSQL_PASSWORD="test"
 MYSQL_HOST="localhost"
 MYSQL_PORT="3306"
 
 
 # DATABASE
-DATABASE_NAME="usaasmp_staging_20251217"
+DATABASE_NAME="test"
 
 
 # BACKUP SETTINGS
-BACKUP_DIR="/data/apps/usaasmp_preprod/database/weekly/backups"
-LOG_DIR="/data/apps/usaasmp_preprod/database/weekly/logs"
+BACKUP_DIR="/data/apps/test/database/weekly/backups"
+LOG_DIR="/data/apps/test/database/weekly/logs"
 DATE="$(date +'%Y-%m-%d_%H-%M-%S_%N')"
 
 BACKUP_RETENTION_DAYS=7
@@ -154,3 +154,4 @@ log "Total script execution time: ${MINUTES} min ${SECONDS_LEFT} sec"
 
 log "MySQL backup completed successfully"
 exit 0
+
